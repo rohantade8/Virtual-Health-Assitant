@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Condition Prediction</title>
+    <style>
+        /* Define styles for the body element */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header element */
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the form container */
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the label */
+        label {
+            font-weight: bold;
+        }
+
+        /* Style the input field */
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Style the submit button */
+        button {
+            background-color: #0078d4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Condition Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="symptoms">Enter your symptoms:</label>
+        <input type="text" name="symptoms" id="symptoms">
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        /* Define styles for the body element */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header element */
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the result container */
+        .result-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the result text */
+        p {
+            font-size: 18px;
+        }
+
+        /* Style the "Go back" link */
+        a {
+            color: #0078d4;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+    <div class="result-container">
+        <p>Predicted medical condition: {{ condition }}</p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
